@@ -8,10 +8,10 @@ import { nanoid } from "nanoid";
 
 export default function RandomUserPage() {
   // annotate type for users state variable
-  
+
   const [users, setUsers] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [genAmount, setGenAmount] = useState(1);
+  const [genAmount, setGenAmount] = useState<any>(1);
   const [isFirstLoad, setIsFirstLoad] = useState(true);
 
     useEffect(() => {
